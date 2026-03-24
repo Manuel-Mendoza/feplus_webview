@@ -86,5 +86,29 @@ lint/tmp/
 
 # Mac stuff
 .DS_Store
-/app/keystore/
+
+# IDE files
 .idea/
+*.iml
+*.ipr
+*.iws
+
+# Keystore files
+/app/keystore/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# OS generated files
+Thumbs.db
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Desktop.ini
