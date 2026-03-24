@@ -30,6 +30,19 @@
         app:tint="@null"
         tools:visibility="visible" />
 
+    <ImageView
+        android:id="@+id/brandLogo"
+        android:layout_width="320dp"
+        android:layout_height="96dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lampa_banner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.18" />
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/loaderView"
         android:layout_width="640dp"
@@ -38,7 +51,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.5"
+        app:layout_constraintVertical_bias="0.62"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/loader" />

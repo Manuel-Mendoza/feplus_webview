@@ -59,10 +59,13 @@ android {
                 keyAlias "$keystoreProperties.keyAlias"
                 keyPassword "$keystoreProperties.keyPassword"
             } else {
-                storeFile file(System.getenv('KEYSTORE_FILE'))
-                storePassword System.getenv('KEYSTORE_PASSWORD')
-                keyAlias System.getenv('RELEASE_SIGN_KEY_ALIAS')
-                keyPassword System.getenv('RELEASE_SIGN_KEY_PASSWORD')
+                def envStoreFile = System.getenv('KEYSTORE_FILE')
+                if (envStoreFile) {
+                    storeFile file(envStoreFile)
+                    storePassword System.getenv('KEYSTORE_PASSWORD')
+                    keyAlias System.getenv('RELEASE_SIGN_KEY_ALIAS')
+                    keyPassword System.getenv('RELEASE_SIGN_KEY_PASSWORD')
+                }
             }
         }
     }
@@ -96,17 +99,17 @@ android {
     productFlavors {
         lite {
             buildConfigField "boolean", "enableUpdate", "true"
-            buildConfigField "String", "defaultAppUrl", "\"\""
+            buildConfigField "String", "defaultAppUrl", "\"https://stfeplus.pages.dev\""
         }
         full {
             buildConfigField "boolean", "enableUpdate", "false"
-            buildConfigField "String", "defaultAppUrl", "\"\""
+            buildConfigField "String", "defaultAppUrl", "\"https://stfeplus.pages.dev\""
         }
         ruStore {
             versionNameSuffix "-RuStore"
             minSdk 24 // minSdk RuStore.apk
             buildConfigField "boolean", "enableUpdate", "false"
-            buildConfigField "String", "defaultAppUrl", "\"http://lampa.mx\""
+            buildConfigField "String", "defaultAppUrl", "\"https://stfeplus.pages.dev\""
         }
     }
 

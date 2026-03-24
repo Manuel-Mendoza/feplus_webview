@@ -30,6 +30,7 @@ import top.rootu.lampa.helpers.Helpers.isTelegramInstalled
 import top.rootu.lampa.helpers.Helpers.debugLog
 import top.rootu.lampa.helpers.getNetworkErrorString
 import top.rootu.lampa.helpers.isAttachedToWindowCompat
+import java.util.Locale
 
 // https://developer.android.com/develop/ui/views/layout/webapps/webview#kotlin
 class SysView(override val mainActivity: MainActivity, override val viewResId: Int) : Browser {
@@ -93,17 +94,8 @@ class SysView(override val mainActivity: MainActivity, override val viewResId: I
             override fun shouldOverrideUrlLoading(view: WebView?, url: String?): Boolean {
                 debugLog("shouldOverrideUrlLoading(view, url) view $view url $url")
                 url?.let {
-                    if (it.startsWith("tg://")) {
-                        // Handle Telegram link
-                        if (isTelegramInstalled(mainActivity)) {
-                            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
-                            mainActivity.startActivity(intent)
-                        } else {
-                            // App.toast("Telegram app is not installed. Get in on Google Play.")
-                            redirectToTelegramPlayStore()
-                        }
-                        return true // Indicate that the URL has been handled
-                    }
+                    val uri = Uri.parse(it)
+                    if (handleExternalScheme(uri, view)) return true
                 }
                 return false // Load the URL in the WebView for other links
                 // this will fail for non-http(s) links like lampa:// intent:// etc
@@ -117,19 +109,62 @@ class SysView(override val mainActivity: MainActivity, override val viewResId: I
                 request: WebResourceRequest
             ): Boolean {
                 debugLog("shouldOverrideUrlLoading(view, request) view $view request $request")
-                if (request.url.scheme.equals("tg", true)) {
-                    if (isTelegramInstalled(mainActivity)) {
-                        val intent = Intent(Intent.ACTION_VIEW, request.url)
-                        mainActivity.startActivity(intent)
-                    } else {
-                        // App.toast("Telegram app is not installed. Get in on Google Play.")
-                        redirectToTelegramPlayStore()
-                    }
-                    return true // Indicate that the URL has been handled
-                }
+                if (handleExternalScheme(request.url, view)) return true
                 return false // Load the URL in the WebView for other links
                 // this will fail for non-http(s) links like lampa:// intent:// etc
                 //return super.shouldOverrideUrlLoading(view, request)
+            }
+
+            private fun handleExternalScheme(uri: Uri, view: WebView?): Boolean {
+                val scheme = uri.scheme?.lowercase(Locale.ROOT) ?: return false
+                if (scheme == "http" || scheme == "https" || scheme == "about" ||
+                    scheme == "file" || scheme == "data" || scheme == "javascript"
+                ) {
+                    return false
+                }
+
+                if (scheme == "tg") {
+                    if (isTelegramInstalled(mainActivity)) {
+                        val intent = Intent(Intent.ACTION_VIEW, uri)
+                        try {
+                            mainActivity.startActivity(intent)
+                        } catch (_: ActivityNotFoundException) {
+                            App.toast(R.string.no_activity_found, true)
+                        }
+                    } else {
+                        redirectToTelegramPlayStore()
+                    }
+                    return true
+                }
+
+                return try {
+                    val intent = if (scheme == "intent") {
+                        Intent.parseUri(uri.toString(), Intent.URI_INTENT_SCHEME).apply {
+                            addCategory(Intent.CATEGORY_BROWSABLE)
+                            component = null
+                            selector = null
+                        }
+                    } else {
+                        Intent(Intent.ACTION_VIEW, uri)
+                    }
+
+                    val canHandle = intent.resolveActivity(mainActivity.packageManager) != null
+                    if (canHandle) {
+                        mainActivity.startActivity(intent)
+                    } else {
+                        val fallbackUrl = intent.getStringExtra("browser_fallback_url")
+                        if (!fallbackUrl.isNullOrBlank()) {
+                            view?.loadUrl(fallbackUrl)
+                        } else {
+                            App.toast(R.string.no_activity_found, true)
+                        }
+                    }
+                    true
+                } catch (e: Exception) {
+                    debugLog("External scheme launch failed: $uri - ${e.message}")
+                    App.toast(R.string.no_activity_found, true)
+                    true
+                }
             }
 
 
@@ -316,7 +351,12 @@ class SysView(override val mainActivity: MainActivity, override val viewResId: I
     }
 
     override fun setFocus() {
-        browser?.requestFocus(View.FOCUS_DOWN)
+        browser?.apply {
+            isFocusable = true
+            isFocusableInTouchMode = true
+            requestFocus()
+            requestFocus(View.FOCUS_DOWN)
+        }
     }
 
     override fun getView(): View? {

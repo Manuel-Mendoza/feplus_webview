@@ -63,7 +63,12 @@ object Prefs {
 
     // Extension properties for app settings
     var Context.appUrl: String
-        get() = appPrefs.getString(APP_URL, BuildConfig.defaultAppUrl) ?: ""
+        get() {
+            val savedUrl = appPrefs.getString(APP_URL, null)?.trim().orEmpty()
+            if (savedUrl.isNotEmpty()) return savedUrl
+
+            return BuildConfig.defaultAppUrl.trim()
+        }
         set(url) = appPrefs.edit().putString(APP_URL, url).apply()
 
     var Context.appPlayer: String?

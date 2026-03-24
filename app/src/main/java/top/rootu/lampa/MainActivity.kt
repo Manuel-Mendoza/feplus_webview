@@ -261,6 +261,10 @@ class MainActivity : BaseActivity(),
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         LAMPA_URL = appUrl
+        if (LAMPA_URL.isBlank()) {
+            LAMPA_URL = BuildConfig.defaultAppUrl
+            appUrl = LAMPA_URL
+        }
         SELECTED_PLAYER = appPlayer
         logDebug("onCreate SELECTED_BROWSER: $SELECTED_BROWSER")
         logDebug("onCreate LAMPA_URL: $LAMPA_URL")
@@ -401,6 +405,8 @@ class MainActivity : BaseActivity(),
         if (view.visibility != View.VISIBLE) {
             view.visibility = View.VISIBLE
         }
+        browser?.setFocus()
+        browser?.getView()?.post { browser?.setFocus() }
         // Switch Loader (Note it control delayedVoidJsFunc)
         loaderView.visibility = View.GONE
 
@@ -1614,7 +1620,7 @@ class MainActivity : BaseActivity(),
         inputManager: InputMethodManager
     ) {
         input?.apply {
-            setText(LAMPA_URL.ifEmpty { "http://lampa.mx" })
+            setText(LAMPA_URL.ifEmpty { BuildConfig.defaultAppUrl })
             if (msg.isNotEmpty()) {
                 tilt?.isErrorEnabled = true
                 tilt?.error = msg
@@ -2290,17 +2296,17 @@ class MainActivity : BaseActivity(),
     }
 
     private fun getAvailablePlayers(intent: Intent): List<ResolveInfo> {
-        return if (VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        val allPlayers = if (VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             packageManager.queryIntentActivities(intent, PackageManager.MATCH_ALL)
-                .filterNot { info ->
-                    info.activityInfo.packageName.lowercase() in PLAYERS_BLACKLIST
-                }
         } else {
             packageManager.queryIntentActivities(intent, 0) // PackageManager.MATCH_DEFAULT_ONLY
-                .filterNot { info ->
-                    info.activityInfo.packageName.lowercase() in PLAYERS_BLACKLIST
-                }
         }
+
+        val filteredPlayers = allPlayers.filterNot { info ->
+            info.activityInfo.packageName.lowercase() in PLAYERS_BLACKLIST
+        }
+
+        return if (filteredPlayers.isNotEmpty()) filteredPlayers else allPlayers
     }
 
     private fun configurePlayerIntent(

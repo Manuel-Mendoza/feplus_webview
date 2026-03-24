@@ -92,7 +92,9 @@ class XWalk(override val mainActivity: MainActivity, override val viewResId: Int
 
     override fun goBack() {}
 
-    override fun setFocus() {}
+    override fun setFocus() {
+        browser?.requestFocus(View.FOCUS_DOWN)
+    }
 
     override fun getView(): View? {
         return browser
