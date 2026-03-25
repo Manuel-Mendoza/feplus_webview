@@ -3,6 +3,7 @@ package top.rootu.lampa.helpers
 import android.content.Intent
 import android.net.Uri
 import android.os.Build
+import android.provider.Settings
 import android.text.Spanned
 import androidx.core.content.FileProvider
 import androidx.core.text.HtmlCompat
@@ -191,6 +192,25 @@ object Updater {
         val ctx = App.context
         if (newVersion == null && !check())
             return
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O && !PermHelpers.canRequestPackageInstalls(ctx)) {
+            try {
+                val intent = Intent(Settings.ACTION_MANAGE_UNKNOWN_APP_SOURCES).apply {
+                    data = Uri.parse("package:${ctx.packageName}")
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
+                ctx.startActivity(intent)
+                App.toast(R.string.update_allow_unknown_sources)
+                return
+            } catch (e: Exception) {
+                val intent = Intent(Settings.ACTION_SECURITY_SETTINGS).apply {
+                    addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                }
+                ctx.startActivity(intent)
+                App.toast(R.string.update_allow_unknown_sources)
+                return
+            }
+        }
 
         newVersion?.let {
             val destination = File(

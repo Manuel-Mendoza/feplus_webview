@@ -142,7 +142,7 @@ object RecsService {
     }
 
     private fun loadPosterBitmap(uri: String, width: Int, height: Int): Bitmap {
-        val defaultResId = if (width > height) R.drawable.lampa_banner else R.drawable.empty_poster
+        val defaultResId = if (width > height) R.drawable.feplus_banner else R.drawable.empty_poster
         return try {
             Glide.with(App.context)
                 .asBitmap()
