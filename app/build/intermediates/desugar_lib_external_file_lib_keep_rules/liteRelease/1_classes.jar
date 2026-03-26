@@ -1,0 +1,17 @@
+-keep class j$.util.Iterator { *; }
+-keep class j$.util.DesugarCollections {
+    java.util.Map synchronizedMap(java.util.Map);
+}
+-keep class j$.util.DesugarTimeZone {
+    java.util.TimeZone getTimeZone(java.lang.String);
+}
+-keep class j$.util.Iterator$-CC {
+    void $default$forEachRemaining(java.util.Iterator, java.util.function.Consumer);
+}
+-keep class j$.util.Objects {
+    java.lang.String toString(java.lang.Object, java.lang.String);
+}
+-keep class j$.util.concurrent.ConcurrentHashMap {
+    void <init>();
+}
+-keep class java.util.function.Consumer

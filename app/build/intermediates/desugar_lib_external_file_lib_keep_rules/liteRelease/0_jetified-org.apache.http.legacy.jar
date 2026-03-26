@@ -1,0 +1,5 @@
+-keep class j$.util.Iterator { *; }
+-keep class j$.util.Iterator$-CC {
+    void $default$forEachRemaining(java.util.Iterator, java.util.function.Consumer);
+}
+-keep class java.util.function.Consumer
