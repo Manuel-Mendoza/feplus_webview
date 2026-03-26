@@ -1,0 +1,494 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="top.rootu.lampa"
+4    android:versionCode="553"
+5    android:versionName="1.12.4-3-g633e74c-dirty" >
+6
+7    <uses-sdk
+7-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:5:5-120
+8        android:minSdkVersion="16"
+8-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:5:5-120
+9        android:targetSdkVersion="28" />
+9-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:5:5-120
+10    <!-- use older sdk -->
+11
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:7:5-79
+12-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:8:5-10:43
+13-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:9:9-60
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:11:5-67
+14-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:11:22-64
+15    <uses-permission android:name="android.permission.QUICKBOOT_POWERON" />
+15-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:12:5-76
+15-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:12:22-73
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:13:5-80
+16-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:13:22-77
+17    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+17-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:14:5-81
+17-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:14:22-78
+18    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+18-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:15:5-71
+18-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:15:22-68
+19    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" /> <!-- Android 8.0 updater fix -->
+19-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:16:5-83
+19-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:16:22-80
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:17:5-19:40
+20-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:18:9-65
+21    <uses-permission android:name="com.android.providers.tv.permission.READ_EPG_DATA" /> <!-- Android TV Channels -->
+21-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:20:5-89
+21-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:20:22-86
+22    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
+22-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:21:5-90
+22-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:21:22-87
+23
+24    <queries>
+24-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:23:5-58:15
+25        <package android:name="com.android.vending" />
+25-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:24:9-55
+25-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:24:18-52
+26        <package android:name="com.google.android.googlequicksearchbox" />
+26-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:25:9-75
+26-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:25:18-72
+27        <package android:name="com.google.android.katniss" />
+27-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:26:9-62
+27-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:26:18-59
+28        <package android:name="net.gtvbox.videoplayer" />
+28-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:27:9-58
+28-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:27:18-55
+29        <package android:name="net.gtvbox.vimuhd" />
+29-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:28:9-53
+29-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:28:18-50
+30        <package android:name="org.telegram.messenger" />
+30-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:29:9-58
+30-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:29:18-55
+31        <package android:name="org.telegram.plus" />
+31-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:30:9-53
+31-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:30:18-50
+32        <package android:name="org.telegram.messenger.web" />
+32-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:31:9-62
+32-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:31:18-59
+33        <package android:name="nekox.messenger" />
+33-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:32:9-51
+33-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:32:18-48
+34        <package android:name="uz.dilijan.messenger" />
+34-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:33:9-56
+34-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:33:18-53
+35
+36        <intent>
+36-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:35:9-37:18
+37            <action android:name="android.speech.RecognitionService" />
+37-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:36:13-72
+37-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:36:21-69
+38        </intent>
+39        <intent>
+39-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:38:9-42:18
+40            <action android:name="android.intent.action.PICK" />
+40-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:39:13-65
+40-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:39:21-62
+41
+42            <data android:mimeType="*/*" />
+42-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+42-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:19-41
+43        </intent>
+44        <intent>
+44-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:43:9-47:18
+45            <action android:name="android.intent.action.VIEW" />
+45-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:13-65
+45-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:21-62
+46
+47            <data android:mimeType="application/x-bittorrent" />
+47-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+47-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:19-41
+48        </intent>
+49        <intent>
+49-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:48:9-52:18
+50            <action android:name="android.intent.action.VIEW" />
+50-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:13-65
+50-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:21-62
+51
+52            <data android:mimeType="video/*" />
+52-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+52-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:19-41
+53        </intent>
+54        <intent>
+54-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:53:9-57:18
+55            <action android:name="android.intent.action.VIEW" />
+55-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:13-65
+55-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:21-62
+56
+57            <data android:mimeType="audio/x-mpegurl" />
+57-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+57-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:19-41
+58        </intent>
+59    </queries>
+60
+61    <uses-feature
+61-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:60:5-62:36
+62        android:name="android.hardware.touchscreen"
+62-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:61:9-52
+63        android:required="false" />
+63-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:62:9-33
+64    <uses-feature
+64-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:63:5-65:36
+65        android:name="android.hardware.microphone"
+65-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:64:9-51
+66        android:required="false" />
+66-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:65:9-33
+67    <uses-feature
+67-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:66:5-68:36
+68        android:name="android.software.leanback"
+68-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:67:9-49
+69        android:required="false" />
+69-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:68:9-33
+70
+71    <permission
+71-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
+72        android:name="top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+72-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
+73        android:protectionLevel="signature" />
+73-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
+74
+75    <uses-permission android:name="top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+75-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
+75-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
+76
+77    <application
+77-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:70:5-193:19
+78        android:name="top.rootu.lampa.App"
+78-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:71:9-28
+79        android:allowBackup="true"
+79-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:72:9-35
+80        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+80-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:28:18-86
+81        android:banner="@drawable/feplus_banner"
+81-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:73:9-49
+82        android:debuggable="true"
+83        android:hardwareAccelerated="true"
+83-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:74:9-43
+84        android:icon="@drawable/lampa_icon"
+84-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:75:9-44
+85        android:label="@string/app_name"
+85-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:76:9-41
+86        android:largeHeap="true"
+86-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:77:9-33
+87        android:networkSecurityConfig="@xml/network_security_config"
+87-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:78:9-69
+88        android:requestLegacyExternalStorage="true"
+88-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:79:9-52
+89        android:roundIcon="@drawable/lampa_icon"
+89-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:80:9-49
+90        android:screenOrientation="userLandscape"
+90-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:81:9-50
+91        android:supportsRtl="true"
+91-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:82:9-35
+92        android:theme="@style/Theme.LAMPA" >
+92-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:83:9-43
+93        <activity
+93-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:86:9-88:40
+94            android:name="top.rootu.lampa.CrashActivity"
+94-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:87:13-42
+95            android:exported="false" />
+95-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:88:13-37
+96        <activity
+96-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:89:9-133:20
+97            android:name="top.rootu.lampa.MainActivity"
+97-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:90:13-41
+98            android:allowTaskReparenting="true"
+98-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:91:13-48
+99            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+99-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:92:13-83
+100            android:exported="true"
+100-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:93:13-36
+101            android:launchMode="singleTop" >
+101-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:94:13-43
+102            <intent-filter>
+102-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:95:13-100:29
+103                <action android:name="android.intent.action.MAIN" />
+103-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:96:17-69
+103-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:96:25-66
+104
+105                <category android:name="android.intent.category.LAUNCHER" />
+105-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:98:17-77
+105-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:98:27-74
+106                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+106-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:99:17-86
+106-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:99:27-83
+107            </intent-filter>
+108            <intent-filter>
+108-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:101:13-103:29
+109                <action android:name="android.intent.action.SEARCH" />
+109-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:102:17-71
+109-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:102:25-68
+110            </intent-filter>
+111            <intent-filter android:autoVerify="true" >
+111-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:104:13-117:29
+111-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:104:28-53
+112                <action android:name="android.intent.action.VIEW" />
+112-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:13-65
+112-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:21-62
+113                <action android:name="android.intent.action.SEND" />
+113-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:106:17-69
+113-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:106:25-66
+114
+115                <category android:name="android.intent.category.DEFAULT" />
+115-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:17-76
+115-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:27-73
+116                <category android:name="android.intent.category.BROWSABLE" />
+116-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:109:17-78
+116-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:109:27-75
+117
+118                <data android:scheme="http" />
+118-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+118-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:111:23-44
+119                <data android:scheme="https" />
+119-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+119-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:111:23-44
+120                <data android:host="www.themoviedb.org" />
+120-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+120-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:113:23-56
+121                <data android:host="themoviedb.org" />
+121-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+121-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:113:23-56
+122                <data android:pathPattern="/movie/.*" />
+122-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+122-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:115:23-54
+123                <data android:pathPattern="/tv/.*" />
+123-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+123-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:115:23-54
+124            </intent-filter>
+125            <intent-filter>
+125-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:118:13-128:29
+126                <action android:name="android.intent.action.VIEW" />
+126-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:13-65
+126-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:44:21-62
+127
+128                <category android:name="android.intent.category.DEFAULT" />
+128-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:17-76
+128-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:27-73
+129                <category android:name="android.intent.category.BROWSABLE" />
+129-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:109:17-78
+129-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:109:27-75
+130
+131                <data
+131-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:41:13-44
+132                    android:host="@string/provider_auth"
+132-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:113:23-56
+133                    android:pathPattern=".*"
+133-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:115:23-54
+134                    android:scheme="lampa" />
+134-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:111:23-44
+135            </intent-filter>
+136
+137            <meta-data
+137-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:130:13-132:54
+138                android:name="android.app.searchable"
+138-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:131:17-54
+139                android:resource="@xml/searchable" />
+139-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:132:17-51
+140        </activity>
+141        <activity
+141-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:134:9-138:50
+142            android:name="top.rootu.lampa.UpdateActivity"
+142-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:135:13-43
+143            android:excludeFromRecents="true"
+143-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:136:13-46
+144            android:launchMode="singleInstance"
+144-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:137:13-48
+145            android:theme="@style/Theme.LAMPA" />
+145-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:138:13-47
+146
+147        <uses-library
+147-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:140:9-142:40
+148            android:name="org.apache.http.legacy"
+148-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:141:13-50
+149            android:required="false" />
+149-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:142:13-37
+150
+151        <receiver
+151-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:144:9-155:20
+152            android:name="top.rootu.lampa.receivers.BootReceiver"
+152-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:145:13-51
+153            android:enabled="true"
+153-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:146:13-35
+154            android:exported="false" >
+154-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:147:13-37
+155            <intent-filter>
+155-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:148:13-154:29
+156                <action android:name="android.intent.action.BOOT_COMPLETED" />
+156-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:149:17-79
+156-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:149:25-76
+157                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+157-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:150:17-82
+157-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:150:25-79
+158                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+158-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:151:17-82
+158-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:151:25-79
+159
+160                <category android:name="android.intent.category.DEFAULT" />
+160-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:17-76
+160-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:27-73
+161            </intent-filter>
+162        </receiver>
+163        <receiver
+163-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:156:9-168:20
+164            android:name="top.rootu.lampa.receivers.HomeWatch"
+164-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:157:13-48
+165            android:enabled="true"
+165-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:158:13-35
+166            android:exported="true" >
+166-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:159:13-36
+167            <intent-filter>
+167-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:160:13-167:29
+168                <action android:name="android.media.tv.action.INITIALIZE_PROGRAMS" />
+168-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:161:17-86
+168-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:161:25-83
+169                <action android:name="android.media.tv.action.PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT" />
+169-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:162:17-102
+169-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:162:25-99
+170                <action android:name="android.media.tv.action.WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED" />
+170-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:163:17-104
+170-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:163:25-101
+171                <action android:name="android.media.tv.action.PREVIEW_PROGRAM_BROWSABLE_DISABLED" />
+171-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:164:17-101
+171-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:164:25-98
+172
+173                <category android:name="android.intent.category.DEFAULT" />
+173-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:17-76
+173-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:108:27-73
+174            </intent-filter>
+175        </receiver>
+176
+177        <provider
+178            android:name="androidx.core.content.FileProvider"
+178-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:171:13-62
+179            android:authorities="top.rootu.lampa.update_provider"
+179-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:172:13-67
+180            android:exported="false"
+180-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:173:13-37
+181            android:grantUriPermissions="true" >
+181-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:174:13-47
+182            <meta-data
+182-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:175:13-177:58
+183                android:name="android.support.FILE_PROVIDER_PATHS"
+183-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:176:17-67
+184                android:resource="@xml/provider_paths" />
+184-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:177:17-55
+185        </provider>
+186        <provider
+187            android:name="top.rootu.lampa.search.SearchProvider"
+187-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:180:13-50
+188            android:authorities="top.rootu.lampa.atvsearch"
+188-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:181:13-61
+189            android:exported="true" />
+189-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:182:13-36
+190
+191        <service
+191-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:185:9-189:72
+192            android:name="top.rootu.lampa.sched.ContentJobService"
+192-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:186:13-52
+193            android:enabled="true"
+193-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:187:13-35
+194            android:exported="true"
+194-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:188:13-36
+195            android:permission="android.permission.BIND_JOB_SERVICE" />
+195-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:189:13-69
+196        <service
+196-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:190:9-192:38
+197            android:name="top.rootu.lampa.sched.ContentAlarmManager"
+197-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:191:13-54
+198            android:enabled="true" />
+198-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:192:13-35
+199
+200        <provider
+200-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+201            android:name="androidx.startup.InitializationProvider"
+201-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+202            android:authorities="top.rootu.lampa.androidx-startup"
+202-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+203            android:exported="false" >
+203-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+204            <meta-data
+204-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+205                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+205-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+206                android:value="androidx.startup" />
+206-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+207            <meta-data
+207-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/manuel/.gradle/caches/transforms-3/36f5f1810468bdbec15d525963f7d031/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
+208                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+208-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/manuel/.gradle/caches/transforms-3/36f5f1810468bdbec15d525963f7d031/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
+209                android:value="androidx.startup" />
+209-->[androidx.lifecycle:lifecycle-process:2.6.2] /home/manuel/.gradle/caches/transforms-3/36f5f1810468bdbec15d525963f7d031/transformed/jetified-lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
+210            <meta-data
+210-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+211                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+211-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
+212                android:value="androidx.startup" />
+212-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+213        </provider>
+214
+215        <uses-library
+215-->[androidx.window:window:1.0.0] /home/manuel/.gradle/caches/transforms-3/ba2b333d71a202014c833393c5ba19b5/transformed/jetified-window-1.0.0/AndroidManifest.xml:25:9-27:40
+216            android:name="androidx.window.extensions"
+216-->[androidx.window:window:1.0.0] /home/manuel/.gradle/caches/transforms-3/ba2b333d71a202014c833393c5ba19b5/transformed/jetified-window-1.0.0/AndroidManifest.xml:26:13-54
+217            android:required="false" />
+217-->[androidx.window:window:1.0.0] /home/manuel/.gradle/caches/transforms-3/ba2b333d71a202014c833393c5ba19b5/transformed/jetified-window-1.0.0/AndroidManifest.xml:27:13-37
+218        <uses-library
+218-->[androidx.window:window:1.0.0] /home/manuel/.gradle/caches/transforms-3/ba2b333d71a202014c833393c5ba19b5/transformed/jetified-window-1.0.0/AndroidManifest.xml:28:9-30:40
+219            android:name="androidx.window.sidecar"
+219-->[androidx.window:window:1.0.0] /home/manuel/.gradle/caches/transforms-3/ba2b333d71a202014c833393c5ba19b5/transformed/jetified-window-1.0.0/AndroidManifest.xml:29:13-51
+220            android:required="false" />
+220-->[androidx.window:window:1.0.0] /home/manuel/.gradle/caches/transforms-3/ba2b333d71a202014c833393c5ba19b5/transformed/jetified-window-1.0.0/AndroidManifest.xml:30:13-37
+221
+222        <meta-data
+222-->[com.github.bumptech.glide:okhttp3-integration:5.0.5] /home/manuel/.gradle/caches/transforms-3/ace1d9fe009405f86c82d42731ecf30f/transformed/jetified-okhttp3-integration-5.0.5/AndroidManifest.xml:8:9-10:43
+223            android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule"
+223-->[com.github.bumptech.glide:okhttp3-integration:5.0.5] /home/manuel/.gradle/caches/transforms-3/ace1d9fe009405f86c82d42731ecf30f/transformed/jetified-okhttp3-integration-5.0.5/AndroidManifest.xml:9:13-84
+224            android:value="GlideModule" />
+224-->[com.github.bumptech.glide:okhttp3-integration:5.0.5] /home/manuel/.gradle/caches/transforms-3/ace1d9fe009405f86c82d42731ecf30f/transformed/jetified-okhttp3-integration-5.0.5/AndroidManifest.xml:10:13-40
+225
+226        <receiver
+226-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+227            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+227-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+228            android:directBootAware="false"
+228-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+229            android:enabled="true"
+229-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+230            android:exported="true"
+230-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+231            android:permission="android.permission.DUMP" >
+231-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+232            <intent-filter>
+232-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+233                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+233-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+234            </intent-filter>
+235            <intent-filter>
+235-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+236                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+236-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+236-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+237            </intent-filter>
+238            <intent-filter>
+238-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+239                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+239-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+239-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
+240            </intent-filter>
+241            <intent-filter>
+241-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+242                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+242-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+242-->[androidx.profileinstaller:profileinstaller:1.3.0] /home/manuel/.gradle/caches/transforms-3/e871a0485ba6e7939b11dbeb1e2fec3e/transformed/jetified-profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
+243            </intent-filter>
+244        </receiver>
+245    </application>
+246
+247</manifest>
