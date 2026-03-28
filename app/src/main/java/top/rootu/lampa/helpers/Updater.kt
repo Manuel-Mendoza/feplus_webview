@@ -29,7 +29,7 @@ import javax.net.ssl.SSLSocketFactory
 
 object Updater {
     private const val RELEASE_LINK =
-        "https://api.github.com/repos/lampa-app/LAMPA/releases"
+        "https://api.github.com/repos/Manuel-Mendoza/feplus_webview/releases"
     private var releases: Releases? = null
     private var newVersion: Release? = null
 
@@ -215,7 +215,7 @@ object Updater {
         newVersion?.let {
             val destination = File(
                 ctx.getExternalFilesDir(null),
-                "LAMPA.apk"
+                "FePlus.apk"
             ).apply {
                 mkdirs()
                 deleteOnExit()

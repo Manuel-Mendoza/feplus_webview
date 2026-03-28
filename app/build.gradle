@@ -36,7 +36,7 @@ android {
     //noinspection GradleDependency
     compileSdk 34
     defaultConfig {
-        applicationId "top.rootu.lampa"
+        applicationId "top.rootu.feplus"
         minSdkVersion 16
         //noinspection ExpiredTargetSdkVersion
         targetSdkVersion 28
