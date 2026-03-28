@@ -4,15 +4,15 @@
     "type": "PACKAGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "top.rootu.lampa",
+  "applicationId": "top.rootu.feplus",
   "variantName": "liteRelease",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 557,
-      "versionName": "1.0.0-5-ga8d4554-dirty",
+      "versionCode": 560,
+      "versionName": "1.0.0-8-g6d64d77",
       "outputFile": "AndroidManifest.xml"
     }
   ],

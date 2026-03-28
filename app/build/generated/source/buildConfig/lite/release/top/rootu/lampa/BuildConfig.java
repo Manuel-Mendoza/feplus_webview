@@ -5,11 +5,11 @@ package top.rootu.lampa;
 
 public final class BuildConfig {
   public static final boolean DEBUG = false;
-  public static final String APPLICATION_ID = "top.rootu.lampa";
+  public static final String APPLICATION_ID = "top.rootu.feplus";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "lite";
-  public static final int VERSION_CODE = 557;
-  public static final String VERSION_NAME = "1.0.0-5-ga8d4554-dirty";
+  public static final int VERSION_CODE = 560;
+  public static final String VERSION_NAME = "1.0.0-8-g6d64d77";
   // Field from product flavor: lite
   public static final String defaultAppUrl = "https://stfeplus.pages.dev";
   // Field from product flavor: lite

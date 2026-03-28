@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="top.rootu.lampa"
-    android:versionCode="557"
-    android:versionName="1.0.0-5-ga8d4554-dirty" >
+    package="top.rootu.feplus"
+    android:versionCode="560"
+    android:versionName="1.0.0-8-g6d64d77" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -69,10 +69,10 @@
         android:required="false" />
 
     <permission
-        android:name="top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="top.rootu.feplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="top.rootu.feplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:name="top.rootu.lampa.App"
@@ -175,7 +175,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="top.rootu.lampa.update_provider"
+            android:authorities="top.rootu.feplus.update_provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data
@@ -184,7 +184,7 @@
         </provider>
         <provider
             android:name="top.rootu.lampa.search.SearchProvider"
-            android:authorities="top.rootu.lampa.atvsearch"
+            android:authorities="top.rootu.feplus.atvsearch"
             android:exported="true" />
 
         <service
@@ -198,7 +198,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="top.rootu.lampa.androidx-startup"
+            android:authorities="top.rootu.feplus.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

@@ -40,7 +40,7 @@
   </testFixturesSourceProviders>
   <mainArtifact
       classOutputs="build/intermediates/javac/liteRelease/classes:build/tmp/kotlin-classes/liteRelease:build/kotlinToolingMetadata:build/generated/ksp/liteRelease/resources:build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/liteRelease/R.jar"
-      applicationId="top.rootu.lampa"
+      applicationId="top.rootu.feplus"
       generatedSourceFolders="build/generated/ksp/liteRelease/java:build/generated/ksp/liteRelease/kotlin:build/generated/ap_generated_sources/liteRelease/out:build/generated/aidl_source_output_dir/liteRelease/out:build/generated/source/buildConfig/lite/release:build/generated/renderscript_source_output_dir/liteRelease/out:build/generated/data_binding_base_class_source_out/liteRelease/out"
       generatedResourceFolders="build/generated/res/rs/lite/release:build/generated/res/resValues/lite/release">
   </mainArtifact>

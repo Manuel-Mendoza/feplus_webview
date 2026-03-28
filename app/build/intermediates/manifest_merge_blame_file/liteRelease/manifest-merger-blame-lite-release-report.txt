@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="top.rootu.lampa"
-4    android:versionCode="557"
-5    android:versionName="1.0.0-5-ga8d4554-dirty" >
+3    package="top.rootu.feplus"
+4    android:versionCode="560"
+5    android:versionName="1.0.0-8-g6d64d77" >
 6
 7    <uses-sdk
 7-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:5:5-120
@@ -148,12 +148,12 @@
 70
 71    <permission
 71-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
-72        android:name="top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+72        android:name="top.rootu.feplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
 72-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
 73        android:protectionLevel="signature" />
 73-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 74
-75    <uses-permission android:name="top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+75    <uses-permission android:name="top.rootu.feplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 75-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 75-->[androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
 76
@@ -365,7 +365,7 @@
 176        <provider
 177            android:name="androidx.core.content.FileProvider"
 177-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:171:13-62
-178            android:authorities="top.rootu.lampa.update_provider"
+178            android:authorities="top.rootu.feplus.update_provider"
 178-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:172:13-67
 179            android:exported="false"
 179-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:173:13-37
@@ -381,7 +381,7 @@
 185        <provider
 186            android:name="top.rootu.lampa.search.SearchProvider"
 186-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:180:13-50
-187            android:authorities="top.rootu.lampa.atvsearch"
+187            android:authorities="top.rootu.feplus.atvsearch"
 187-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:181:13-61
 188            android:exported="true" />
 188-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:182:13-36
@@ -407,7 +407,7 @@
 199-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
 200            android:name="androidx.startup.InitializationProvider"
 200-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-201            android:authorities="top.rootu.lampa.androidx-startup"
+201            android:authorities="top.rootu.feplus.androidx-startup"
 201-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
 202            android:exported="false" >
 202-->[androidx.emoji2:emoji2:1.2.0] /home/manuel/.gradle/caches/transforms-3/119f94bb167a17507e37a658427bb6d4/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
