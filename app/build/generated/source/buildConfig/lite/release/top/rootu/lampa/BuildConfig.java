@@ -8,8 +8,8 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "top.rootu.feplus";
   public static final String BUILD_TYPE = "release";
   public static final String FLAVOR = "lite";
-  public static final int VERSION_CODE = 560;
-  public static final String VERSION_NAME = "1.0.0-8-g6d64d77";
+  public static final int VERSION_CODE = 561;
+  public static final String VERSION_NAME = "1.0.0-9-gc9c62bb-dirty";
   // Field from product flavor: lite
   public static final String defaultAppUrl = "https://stfeplus.pages.dev";
   // Field from product flavor: lite

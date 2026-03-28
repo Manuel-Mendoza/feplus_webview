@@ -11,8 +11,8 @@
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 560,
-      "versionName": "1.0.0-8-g6d64d77",
+      "versionCode": 561,
+      "versionName": "1.0.0-9-gc9c62bb-dirty",
       "outputFile": "resources-lite-release-optimize.ap_"
     }
   ],
