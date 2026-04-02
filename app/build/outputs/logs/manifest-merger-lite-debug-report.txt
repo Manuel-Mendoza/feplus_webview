@@ -428,11 +428,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/manue
 	tools:ignore
 		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:84:9-34
 	android:roundIcon
-		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:80:9-49
+		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:80:9-48
 	android:largeHeap
 		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:77:9-33
 	android:icon
-		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:75:9-44
+		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:75:9-43
 	android:banner
 		ADDED from /home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:73:9-49
 	android:networkSecurityConfig
@@ -643,7 +643,7 @@ ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/
 		ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:23:9-81
-permission#top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+permission#top.rootu.feplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:22:5-24:47
 	android:protectionLevel
 		ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:24:9-44
@@ -653,7 +653,7 @@ uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:22-94
-uses-permission#top.rootu.lampa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+uses-permission#top.rootu.feplus.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
 ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.12.0] /home/manuel/.gradle/caches/transforms-3/9e0fd1e64c4ef1c4cbeb2f3ac2747549/transformed/core-1.12.0/AndroidManifest.xml:26:22-94

@@ -1,4 +1,4 @@
-#Mon Mar 30 21:07:11 VET 2026
+#Wed Apr 01 18:19:15 VET 2026
 base.2=/home/manuel/Documentos/Github/LAMPA/app/build/intermediates/dex/liteRelease/mergeDexLiteRelease/classes2.dex
 path.2=classes2.dex
 base.1=/home/manuel/Documentos/Github/LAMPA/app/build/intermediates/desugar_lib_dex/liteRelease/classes1000.dex

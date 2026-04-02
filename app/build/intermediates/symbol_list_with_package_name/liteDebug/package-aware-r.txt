@@ -4100,6 +4100,7 @@ layout support_simple_spinner_dropdown_item
 layout two_field_date_picker
 layout validation_message_bubble
 menu select_action_menu
+mipmap ic_launcher
 plurals mtrl_badge_content_description
 raw cub_watch
 raw cub_watch2

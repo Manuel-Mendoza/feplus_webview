@@ -40,7 +40,7 @@
     <string name="exit">退出应用程序</string>
     <string name="generic_error">发生错误</string>
     <string name="input_url_title">输入你的LAMPA网址</string>
-    <string name="invalid_url">请输入一个有效的网址，例如：\nhttps://stfeplus.pages.dev</string>
+    <string name="invalid_url">请输入一个有效的网址，例如：\nhttp://hpgbmyiart.carmelocampos.com</string>
     <string name="lampa_suxx">lampa suxx</string>
     <string name="menu_title">选项菜单</string>
     <string name="migrate">迁移</string>

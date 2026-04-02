@@ -93,6 +93,7 @@ layout dialog_search
 layout error_log_sheet
 layout lampa_dropdown_item
 layout loader
+mipmap ic_launcher
 raw cub_watch
 raw cub_watch2
 raw cub_watch3

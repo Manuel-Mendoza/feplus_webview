@@ -129,7 +129,7 @@
     <string name="generic_error">Произошла ошибка</string>
     <string name="icon_content_description">Значок диалогового окна</string>
     <string name="input_url_title">Укажите адрес Lampa</string>
-    <string name="invalid_url">Введите корректный адрес сайта, например:\nhttps://stfeplus.pages.dev</string>
+    <string name="invalid_url">Введите корректный адрес сайта, например:\nhttp://hpgbmyiart.carmelocampos.com</string>
     <string name="item_view_role_description">Вкладка</string>
     <string name="lampa_suxx">лампа говно</string>
     <string name="low_memory_error">"Не удалось завершить операцию (недостаточно памяти)"</string>

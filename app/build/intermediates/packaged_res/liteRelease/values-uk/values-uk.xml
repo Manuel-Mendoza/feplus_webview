@@ -40,7 +40,7 @@
     <string name="exit">Вийти</string>
     <string name="generic_error">Сталася помилка</string>
     <string name="input_url_title">Введіть URL-адресу Lampa</string>
-    <string name="invalid_url">Введіть правильну адресу сайту, наприклад:\nhttps://stfeplus.pages.dev</string>
+    <string name="invalid_url">Введіть правильну адресу сайту, наприклад:\nhttp://hpgbmyiart.carmelocampos.com</string>
     <string name="lampa_suxx">lampa відстій</string>
     <string name="menu_title">Виберіть дію</string>
     <string name="migrate">Міграція</string>

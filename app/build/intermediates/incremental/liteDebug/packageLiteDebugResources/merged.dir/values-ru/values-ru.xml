@@ -40,7 +40,7 @@
     <string name="exit">Завершить работу</string>
     <string name="generic_error">Произошла ошибка</string>
     <string name="input_url_title">Укажите адрес Lampa</string>
-    <string name="invalid_url">Введите корректный адрес сайта, например:\nhttps://stfeplus.pages.dev</string>
+    <string name="invalid_url">Введите корректный адрес сайта, например:\nhttp://hpgbmyiart.carmelocampos.com</string>
     <string name="lampa_suxx">лампа говно</string>
     <string name="menu_title">Выберите действие</string>
     <string name="migrate">Миграция</string>

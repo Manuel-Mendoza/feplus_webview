@@ -129,7 +129,7 @@
     <string name="generic_error">Сталася помилка</string>
     <string name="icon_content_description">Значок вікна</string>
     <string name="input_url_title">Введіть URL-адресу Lampa</string>
-    <string name="invalid_url">Введіть правильну адресу сайту, наприклад:\nhttps://stfeplus.pages.dev</string>
+    <string name="invalid_url">Введіть правильну адресу сайту, наприклад:\nhttp://hpgbmyiart.carmelocampos.com</string>
     <string name="item_view_role_description">Вкладка</string>
     <string name="lampa_suxx">lampa відстій</string>
     <string name="low_memory_error">"Не вдається закінчити попередню операцію через нестачу пам’яті"</string>

@@ -24,6 +24,7 @@ object Prefs {
     const val STORAGE_PREFERENCES = "storage"
     private const val APP_LAST_PLAYED = "last_played"
     private const val APP_URL = "url"
+    private const val LEGACY_APP_HOST = "stfeplus.pages.dev"
     private const val APP_URL_HISTORY = "lampa_history"
     private const val APP_PLAYER = "player"
     private const val IPTV_PLAYER = "iptv_player"
@@ -65,7 +66,20 @@ object Prefs {
     var Context.appUrl: String
         get() {
             val savedUrl = appPrefs.getString(APP_URL, null)?.trim().orEmpty()
-            if (savedUrl.isNotEmpty()) return savedUrl
+            if (savedUrl.isNotEmpty()) {
+                val migratedUrl =
+                    if (savedUrl.contains(LEGACY_APP_HOST, ignoreCase = true)) {
+                        BuildConfig.defaultAppUrl.trim()
+                    } else {
+                        savedUrl
+                    }
+
+                if (migratedUrl != savedUrl) {
+                    appPrefs.edit().putString(APP_URL, migratedUrl).apply()
+                }
+
+                return migratedUrl
+            }
 
             return BuildConfig.defaultAppUrl.trim()
         }

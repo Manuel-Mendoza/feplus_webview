@@ -4,15 +4,15 @@
     "type": "MERGED_MANIFESTS",
     "kind": "Directory"
   },
-  "applicationId": "top.rootu.lampa",
+  "applicationId": "top.rootu.feplus",
   "variantName": "liteDebug",
   "elements": [
     {
       "type": "SINGLE",
       "filters": [],
       "attributes": [],
-      "versionCode": 553,
-      "versionName": "1.12.4-3-g633e74c-dirty",
+      "versionCode": 566,
+      "versionName": "1.0.0-14-g321be95-dirty",
       "outputFile": "AndroidManifest.xml"
     }
   ],
