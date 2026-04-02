@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="top.rootu.feplus"
-    android:versionCode="566"
-    android:versionName="1.0.0-14-g321be95-dirty" >
+    android:versionCode="567"
+    android:versionName="1.0.0-15-g29d31b1-dirty" >
 
     <uses-sdk
         android:minSdkVersion="16"
