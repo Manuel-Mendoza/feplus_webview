@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="top.rootu.feplus"
-4    android:versionCode="567"
-5    android:versionName="1.0.0-15-g29d31b1-dirty" >
+4    android:versionCode="568"
+5    android:versionName="1.0.0-16-gaaa2745-dirty" >
 6
 7    <uses-sdk
 7-->/home/manuel/Documentos/Github/LAMPA/app/src/main/AndroidManifest.xml:5:5-120
